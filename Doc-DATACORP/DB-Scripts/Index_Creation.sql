@@ -1,0 +1,11 @@
+-- ABSOLUTELY ESSENTIAL INDEXES ONLY
+CREATE INDEX idx_clients_full_name ON clients(full_name);
+CREATE INDEX idx_clients_national_id ON clients(national_id);
+CREATE INDEX idx_clients_agency_id ON clients(agency_id);
+CREATE INDEX idx_users_username ON users(username);
+CREATE INDEX idx_users_agency_id ON users(agency_id);
+CREATE INDEX idx_contracts_contract_number ON contracts(contract_number);
+CREATE INDEX idx_contracts_client_id ON contracts(client_id);
+CREATE INDEX idx_transactions_transaction_ref ON transactions(transaction_ref);
+CREATE INDEX idx_transactions_contract_id ON transactions(contract_id);
+CREATE INDEX idx_transactions_transaction_date ON transactions(transaction_date);
